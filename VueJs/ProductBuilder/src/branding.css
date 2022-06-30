@@ -1,0 +1,521 @@
+/*LAYOUT*/
+*{
+	margin:0;
+	padding: 0;
+}
+#vpbProductBuilderApp{
+	/*width:1200px;*/
+	width:100%;
+}
+.vpb--productContainer{
+	display: flex;
+	margin: auto -1rem 1rem;
+}
+
+
+
+
+#vpbProductStage {
+	flex: 3;
+}
+.vpb--productStage{
+	max-width: 890px;
+}
+
+.vpb--productImages{
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+	align-content: start
+}
+.vpb--productImages:after {
+	display: block;
+	margin: 10px;
+	flex: 999 999 auto;
+}
+
+.vpb--productImages img{
+	max-width: 100%;
+	flex: 1 1 0;
+	min-width: 0;;
+	margin: 10px;
+}
+
+.vpb--productDetails{
+	background: #f4f4f4;
+	/*width: 100%;*/
+	padding: 32px 52px 53px 53px;
+}
+
+.vpb--productDetailsLabel{
+	font-family: FuturaPT;
+	font-size: 18px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: 1.13px;
+	padding-bottom: 16px;
+	margin-top: 15px;
+	width:100%;
+	border-bottom: 1px solid #a2a9ae;
+}
+
+.vpb--productDetailsArea{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.vpb--productDetailsArea p{
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.vpb--productConfig {
+	flex:1;
+	/*width: 500px;*/
+	max-width: 500px;
+	/*min-width: 500px;*/
+}
+
+.vpb--categoryContainer {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.vpb--categoryItem {
+	/*padding: 30px 10px;*/
+	text-align: center;
+	flex: 1 1 30.332%;
+	margin:10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	/*width:33.332%;*/
+	-webkit-box-shadow: 0px 0px 3px 0px rgba(155,155,155,0.33);
+	box-shadow: 0px 0px 3px 0px rgba(155,155,155,0.33);
+}
+
+
+
+.vpb--categoryItemTitle{
+
+}
+
+.vpb--productDescription{
+	margin-top:15px;
+}
+
+.vpb--categoryImg {
+	width: 75%;
+}
+.vpb--w-25{
+	width: 20%;
+}
+.vpb--pointer {
+	cursor: pointer;
+}
+
+
+.vpb--brandName{
+	width: 300px;
+	height: 21px;
+	margin: 20px 0 12px 0;
+	font-family: FuturaPT;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: 1px;
+}
+.vpb--ringName{
+	margin: 22px 0 24px 0;
+	font-family: FuturaPT;
+	font-size: 24px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: 1.5px;
+	color:black;
+}
+.vpb--fromPriceContainer{
+	margin: 15px 0 20px 0;
+	font-family: FuturaPT;
+	font-size: 20px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: black;
+}
+
+.vpb--inStock {
+	margin: 20px 0 20px 0;
+	font-family: FuturaPT-Demi;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: 1px;
+	color: #6ac0b4;
+}
+
+.vpb--ConfigContainer{
+	border-top: 1px solid #a2a9ae;
+}
+
+
+.vpb--ConfigHead{
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	width: 100%;
+	height: 5em;
+}
+
+.vpb--ConfigHeader{
+	padding:15px;
+	font-family: FuturaPT;
+	font-size: 18px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: 1.13px;
+	color:#302d29;
+}
+.vpb--ConfigPick{
+	flex: 1;
+	text-align: right;
+	font-family: FuturaPT-Demi;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: 0.88px;
+	padding:10px;
+	color:#56bce5;
+}
+
+.vpb--ConfigBody{
+	padding:15px;
+}
+.vpb--metalChoicesContainer{
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: flex-start;
+	-ms-flex-pack: justify;
+	justify-content: flex-start;
+	-webkit-align-content: flex-start;
+	-ms-flex-line-pack: start;
+	align-content: flex-start;
+	-webkit-align-items: flex-start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+}
+.vpb--metalChoiceItem{
+	/*-webkit-order: 0;*/
+	/*-ms-flex-order: 0;*/
+	/*order: 0;*/
+	/*-webkit-flex: 0 1 auto;*/
+	/*-ms-flex: 0 1 auto;*/
+	/*flex: 0 1 auto;*/
+	/*-webkit-align-self: auto;*/
+	/*-ms-flex-item-align: auto;*/
+	/*align-self: auto;*/
+
+	/*width: 100px;*/
+	/*position: relative;*/
+	height: 127px;
+	/*margin: 0 10px 10px 0;*/
+	/*padding: 12px 11px 10px 12px;*/
+	border: solid 2px #efefef;
+	flex: 1 1 32%;
+}
+
+.wpb--metalChoiceItem-active{
+	border: solid 2px #56bce5;
+}
+
+.vpb--metalColor{
+	width: 40px;
+	height: 40px;
+	margin-top: 20px;
+	border-radius: 20px;
+	position: static;
+	margin-left: auto;
+	margin-right: auto;
+}
+.vpb--metalChoiceDescription{
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+	font-size: 12px;
+	text-align: center;
+}
+
+.vpb--metalChoiceAdditionalPrice{
+	width:100%;
+	text-align: center;
+	font-size: 12px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: 0.75px;
+	color: #5e2a5c;
+}
+
+
+.vpb--metalChoiceName{
+
+}
+.vpb--metalColor-Gold{
+	background-image: linear-gradient(45deg, #fad961, #f7b41c);
+}
+.vpb--metalColor-Rose{
+	background-image: linear-gradient(45deg, #f0ad9b, #cf7979);
+}
+.vpb--metalColor-White{
+	background-image: linear-gradient(45deg, #fffefe, #dfdfdf);
+}
+.vpb--metalColor-Gold{
+	background-image: linear-gradient(45deg, #fad961, #f7b41c);
+}
+.vpb--metalColor-Platinum{
+	background-image: linear-gradient(315deg, #fffefe, #dfdfdf);
+}
+.vpb--metalColor-Palladium{
+	background-image: linear-gradient(135deg, #fffefe, #dfdfdf);
+}
+
+
+.vpb--widthChoicesContainer{
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: center;
+	-ms-flex-pack: justify;
+	justify-content: center;
+	-webkit-align-content: flex-start;
+	-ms-flex-line-pack: start;
+	align-content: flex-start;
+	-webkit-align-items: flex-start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+}
+.vpb--widthChoiceDescription{
+	margin-top: 10px;
+	font-size: 12px;
+	text-align: center;
+}
+.vpb--widthChoiceItem{
+	-webkit-order: 0;
+	-ms-flex-order: 0;
+	order: 0;
+	-webkit-flex: 0 1 auto;
+	-ms-flex: 0 1 auto;
+	flex: 0 1 auto;
+	-webkit-align-self: auto;
+	-ms-flex-item-align: auto;
+	align-self: auto;
+
+	width: 40px;
+	position: relative;
+	height: 127px;
+	margin: 0 10px 10px 0;
+	padding: 25px 15px;
+	border: solid 2px #efefef;
+
+}
+
+.wpb--widthChoiceItem-active{
+	border: solid 2px #56bce5;
+}
+
+.vpb--widthRect{
+	/*width: 8px;*/
+	height: 100px;
+	border-radius: 3px;
+	border: solid 1px #333f48;
+	border-radius: 3px;
+	position: static;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.vpb--inputHelperText{
+	font-style: italic;
+	font-size: 11px;
+	line-height: 12px;
+	color:gray;
+
+}
+
+
+.vbp--ConfigEngravingContainer{
+	width:100%;
+}
+
+.vbp--ConfigEngravingContainer p{
+	font-family: FuturaPT;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: 0.88px;
+}
+.vbp--ConfigEngravingType{
+	display: flex;
+}
+
+
+.vbp--ConfigEngravingTypeItem{
+	height: 40px;
+	/*width: 75px;*/
+	text-align: center;
+	/*margin: 0 10px 10px 0;*/
+	/*padding: 9px 12px 10px 13px;*/
+	border: solid 2px #efefef;
+	/*display: inline-block;*/
+	/*vertical-align: middle;*/
+	line-height: 40px;
+	font-size: 12px;
+	width:100%;
+	gap: 2px;
+	margin:3px;
+}
+.vbp--ConfigEngravingTypeItem-None{
+
+}
+.vbp--ConfigEngravingTypeItem-Block{
+	font-family: FuturaPT;
+	font-size: 16px;
+	font-weight: 800;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: 1px;
+	text-align: center;
+}
+.vbp--ConfigEngravingTypeItem-Handwritten{
+	font-family: Satisfy;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: 1px;
+	text-align: center;
+}
+.vbp--ConfigEngravingTypeItem-Italic{
+	font-family: FuturaPT-DemiObl;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: 1px;
+	text-align: center;
+}
+.vbp--ConfigEngravingTypeItem--active{
+	border: solid 2px #56bce5;
+}
+.vbp--ConfigureEngravingMessageArea{
+
+}
+.vbp--ConfigureEngravingMessageInput{
+	border-radius: 3px;
+	border: solid 1px #333f48;
+	width: 100%;
+}
+.vbp--ConfigureEngravingCharcount{
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: 0.88px;
+}
+
+/*//pricebox*/
+.vpb--AddToCartBtn{
+	height: 50px;
+	margin: 20px 0;
+	padding: 11px 0 10px;
+	border-radius: 4px;
+	background-color: #6ac0b4;
+	color: white;
+	width: 100%;
+	font-size: 1.12em;
+	text-transform: uppercase;
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+.vpb--col-50{
+	display: inline-block;;
+	width:45%;
+	margin:0;
+	padding:5px;
+}
+
+.vpb--FinalPrice{
+	width: 100%;
+	padding:10px;
+	text-align: center;
+	font-family: FuturaPT;
+	font-size: 25px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+}
+
+.vpb--text-center{
+	text-align: center !important;
+}
+
+
+@media (max-width: 481px) {
+	.vpb--categoryItem{
+		flex: 1 1 100%;
+	}
+
+	.vpb--productContainer{
+		flex-direction: column;
+	}
+	.vpb--ConfigHead{
+		flex-direction: column;
+	}
+	.vpb--ConfigBody{
+		padding:34px 0;
+	}
+}
+
+/*width: 6px;*/
+/*height: 100px;*/
+/*margin: 0 18px 5px;*/
+/*border-radius: 3px;*/
+/*border: solid 1px var(--dark-bluestone);*/
